@@ -10,13 +10,28 @@
 	$exists = $connection->select_db($database);
 
 	if(!$exists) {
-		$query = $connection->query("CREATE DATABSE $database");
+		$query = $connection->query("CREATE DATABASE $database");
 
 		if ($query) {
 			echo "Successfully created database: " . $database;
 		}
 	}
+	else{
+		echo "Database Has already been created";
+	}
 
+	$query = $connection->query("CREATE TABLE posts ("
+		. "id int (11) NOT NULL AUTO_INCREMENT, "
+		. "title varchar (255) NOT NULL,"
+		. "post text NOT NULL,"
+		. "PRIMARY KEY (id))");
+	
+	if ($query) {
+		echo "Succesfully created table :posts";
+	}
+	else {
+		echo "$connection->error";
+	}
 	
 	$connection->close();
 ?>

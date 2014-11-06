@@ -1,3 +1,9 @@
 #ground{
-	background-color: yellow;
+	background-color: green;
+}
+
+@media (max-width: 320px){
+	html { 
+		background-color: blue; 
+	}
 }

@@ -16,6 +16,7 @@
 	</div>
 
 	<div>
+		<!-- this makes a button to collect data -->
 		<button type="submit">Submit That Shiz</button>
 	</div>
 </form>

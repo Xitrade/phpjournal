@@ -20,7 +20,7 @@ class Database {
 		$this->password = $password;
 		$this->database = $database;
 
-	$this->connection = new mysqli($host, $username,$password);
+	$this->connection = new mysqli($this->host, $this->username, $this->password);
 
 	if($this->connection->connect_error) {
 		die("Error: " . $this->connection->connect_error); //tells program to die off
@@ -42,7 +42,7 @@ class Database {
 	}
 	//opens connection to the public
 	public function openConnection() {
-		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->connection);
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
 		if($this->connection->connect_error) {
 			die("Error: " . $this->connection->connect_error); //tells program to die off

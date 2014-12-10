@@ -12,7 +12,7 @@
 
 
 	<div>
-		<label for="username">Scrub's Shitty Username: </label>
+		<label for="username">Scrub's Epic Username: </label>
 		<input type="text" name="username"/>
 	</div>
 

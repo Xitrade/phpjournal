@@ -36,7 +36,7 @@ class Database {
 		}
 	}
 	else{
-		echo "Database Has already been created";
+		echo "";
 	}
 
 	}

@@ -1,8 +1,16 @@
-<!DOCTYPE html>
 <html>
-<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <head>
-<meta charset="UTF-8">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
-<body>
+<body id="ground">
+
+<header>
+    <div><h1>Ulises Gomez-Jaramillo</h1></div>
+    <nav>
+        <a href="http://localhost/phpjournal/register.php">Sign Up</a>
+        <a href="http://localhost/phpjournal/login.php">Log In</a>
+    	<a href="http://localhost/phpjournal/journal.php">Go Home User, You're Drunk</a>
+    </nav>
+  </header>

@@ -2,6 +2,8 @@
 	require_once(__DIR__ . "/Database.php");
 //creates path variable to the desired file/folder
 	session_start();
+	//creates session id
+	session_regenerate_id(true);
 
 	$path = "/phpjournal/";
 
